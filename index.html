@@ -43,28 +43,27 @@
         padding: 20px;
     }
 
-    .header {
-       background: linear-gradient(
-135deg,
-#a18aff, / lighter primary /
-#c4b5fd, / soft lavender /
-#e0e7ff / very light tint */
-);
-color: #fff;
-        padding: 40px 30px;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
+   .header {
+    position: relative;
+    color: #fff;
     }
-
-    .header h1 {
-        font-weight: 600;
-        margin-bottom: 10px;
+    
+    .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    135deg,
+    rgba(127, 90, 240, 0.85),
+    rgba(95, 61, 196, 0.75)
+    );
+    border-radius: 16px;
+    z-index: 0;
     }
-
-    .header p {
-        opacity: 0.9;
-        font-size: 14px;
+    
+    .header * {
+    position: relative;
+    z-index: 1;
     }
 
     .card {
