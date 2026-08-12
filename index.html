@@ -53,17 +53,32 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(
-    135deg,
-    rgba(127, 90, 240, 0.85),
-    rgba(95, 61, 196, 0.75)
-    );
+        135deg,
+        #7f5af0,
+        #6c4ed9,
+        #5a3fc0
+        );
+       
     border-radius: 16px;
     z-index: 0;
     }
-    
+        
     .header * {
     position: relative;
     z-index: 1;
+    }
+    .header p {
+    color: rgba(255, 255, 255, 0.85); /* soft white */
+    font-weight: 400;
+    }
+    
+    .header h1 {
+    color: #ffffff; /* keep strong white */
+    }
+    .badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    backdrop-filter: blur(6px);
     }
 
     .card {
